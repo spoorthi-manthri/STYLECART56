@@ -1,0 +1,9 @@
+
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test Customer",
+  "email": "customer@example.com",
+  "password": "TestPass123"
+}
