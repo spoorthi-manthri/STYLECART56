@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== STYLECART Theme ===== */
+/* Custom color tokens used across the app via Tailwind's arbitrary values.
+   The theme is cream (#faf7f2) backgrounds, burgundy (#800020) primary,
+   and white cards — an elegant clothing boutique aesthetic. */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #faf7f2;
+    color: #1f1f1f;
+  }
+}
+
+/* Cream color utility — referenced as text-cream / bg-cream in components.
+   Tailwind doesn't know "cream" by default, so we define it here. */
+@layer utilities {
+  .text-cream {
+    color: #faf7f2;
+  }
+  .bg-cream {
+    background-color: #faf7f2;
+  }
+  .border-cream {
+    border-color: #faf7f2;
+  }
+}
